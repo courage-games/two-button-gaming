@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dfvwhcoejxjyq"
-path="res://.godot/imported/Renegade_Free_SpriteSheet.png-ec6ce34efd4bfbdbc4dd6cc4188e81fd.ctex"
+uid="uid://dsoegwibqr42w"
+path="res://.godot/imported/SMS_Adv_Agent_Free_SpriteSheet.png-23dd39aa613231f6e92d0fe8d43a7758.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/SMS BRAWLER Character Renegade FREE FILES/Renegade_Free_SpriteSheet.png"
-dest_files=["res://.godot/imported/Renegade_Free_SpriteSheet.png-ec6ce34efd4bfbdbc4dd6cc4188e81fd.ctex"]
+source_file="res://Assets/SMS_Adv_Agent_Free_SpriteSheet.png"
+dest_files=["res://.godot/imported/SMS_Adv_Agent_Free_SpriteSheet.png-23dd39aa613231f6e92d0fe8d43a7758.ctex"]
 
 [params]
 

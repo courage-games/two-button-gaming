@@ -58,7 +58,7 @@ color = Color(0.160784, 0.160784, 0.160784, 1)
 offset = Vector2(576, 324)
 
 [node name="Player" parent="." instance=ExtResource("1_7rywe")]
-position = Vector2(450, 435)
+position = Vector2(500, 425)
 
 [node name="Healthbar" parent="." instance=ExtResource("2_fcjn3")]
 offset_left = 17.0

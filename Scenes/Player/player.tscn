@@ -1,72 +1,123 @@
-[gd_scene load_steps=11 format=3 uid="uid://4750kh3nitog"]
+[gd_scene load_steps=10 format=3 uid="uid://4750kh3nitog"]
 
-[ext_resource type="Texture2D" uid="uid://cjtg136eptil1" path="res://Assets/SMS BRAWLER Character Renegade FREE FILES/Renegade_Idle_1_strip4.png" id="1_iw5p3"]
-[ext_resource type="Script" path="res://Scenes/Player/player.gd" id="1_wj4dy"]
-[ext_resource type="Texture2D" uid="uid://2og2x2tixdil" path="res://Assets/SMS BRAWLER Character Renegade FREE FILES/Renegade_Punch_2.png" id="2_jnyxn"]
+[ext_resource type="Script" path="res://Scripts/Player/player.gd" id="1_wj4dy"]
+[ext_resource type="Texture2D" uid="uid://bv7vx6y8tv0rx" path="res://Assets/StickmanSpreadsheet.png" id="2_4x2xx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wiqpp"]
-size = Vector2(18, 30)
+size = Vector2(18, 30.9)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_wnmtj"]
-atlas = ExtResource("2_jnyxn")
-region = Rect2(0, 0, 24, 32)
+[sub_resource type="Animation" id="Animation_1i3de"]
+resource_name = "A"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [4, 8]
+}
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_sir3m"]
-atlas = ExtResource("1_iw5p3")
-region = Rect2(0, 0, 16, 31)
+[sub_resource type="Animation" id="Animation_7fths"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_bn3r7"]
-atlas = ExtResource("1_iw5p3")
-region = Rect2(16, 0, 16, 31)
+[sub_resource type="Animation" id="Animation_kcgei"]
+resource_name = "idle"
+length = 0.8
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3]
+}
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_jskne"]
-atlas = ExtResource("1_iw5p3")
-region = Rect2(32, 0, 16, 31)
+[sub_resource type="Animation" id="Animation_c1t2j"]
+resource_name = "AA"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [5, 8]
+}
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_08hxh"]
-atlas = ExtResource("1_iw5p3")
-region = Rect2(48, 0, 16, 31)
+[sub_resource type="Animation" id="Animation_ha3gf"]
+resource_name = "AAA"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [6, 8]
+}
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_1nkbj"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_wnmtj")
-}],
-"loop": true,
-"name": &"A",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_sir3m")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_bn3r7")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_jskne")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_08hxh")
-}],
-"loop": true,
-"name": &"Idle",
-"speed": 5.0
-}]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xgw05"]
+_data = {
+"A": SubResource("Animation_1i3de"),
+"AA": SubResource("Animation_c1t2j"),
+"AAA": SubResource("Animation_ha3gf"),
+"RESET": SubResource("Animation_7fths"),
+"idle": SubResource("Animation_kcgei")
+}
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_wj4dy")
 
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 3
+scale = Vector2(10, 10)
+texture = ExtResource("2_4x2xx")
+hframes = 4
+vframes = 4
+
 [node name="Hurtbox" type="CollisionShape2D" parent="."]
+position = Vector2(0, 4.49999)
 scale = Vector2(10, 10)
 shape = SubResource("RectangleShape2D_wiqpp")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_xgw05")
+}
+autoplay = "idle"
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="AnimationPlayer"]
-texture_filter = 3
-scale = Vector2(10, 10)
-sprite_frames = SubResource("SpriteFrames_1nkbj")
-animation = &"A"
-autoplay = "Idle"
+[node name="hit_cooldown" type="Timer" parent="."]
+wait_time = 0.2
+one_shot = true
+
+[connection signal="timeout" from="hit_cooldown" to="." method="_on_timer_timeout"]
