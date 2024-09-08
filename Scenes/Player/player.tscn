@@ -1,17 +1,72 @@
-[gd_scene load_steps=4 format=3 uid="uid://4750kh3nitog"]
+[gd_scene load_steps=11 format=3 uid="uid://4750kh3nitog"]
 
-[ext_resource type="Script" path="res://Scripts/Player/player.gd" id="1_2q77d"]
 [ext_resource type="Texture2D" uid="uid://cjtg136eptil1" path="res://Assets/SMS BRAWLER Character Renegade FREE FILES/Renegade_Idle_1_strip4.png" id="1_iw5p3"]
+[ext_resource type="Script" path="res://Scenes/Player/player.gd" id="1_wj4dy"]
+[ext_resource type="Texture2D" uid="uid://2og2x2tixdil" path="res://Assets/SMS BRAWLER Character Renegade FREE FILES/Renegade_Punch_2.png" id="2_jnyxn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wiqpp"]
-size = Vector2(64, 30)
+size = Vector2(18, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wnmtj"]
+atlas = ExtResource("2_jnyxn")
+region = Rect2(0, 0, 24, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sir3m"]
+atlas = ExtResource("1_iw5p3")
+region = Rect2(0, 0, 16, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bn3r7"]
+atlas = ExtResource("1_iw5p3")
+region = Rect2(16, 0, 16, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jskne"]
+atlas = ExtResource("1_iw5p3")
+region = Rect2(32, 0, 16, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_08hxh"]
+atlas = ExtResource("1_iw5p3")
+region = Rect2(48, 0, 16, 31)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1nkbj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wnmtj")
+}],
+"loop": true,
+"name": &"A",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sir3m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bn3r7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jskne")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_08hxh")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
 
 [node name="Player" type="CharacterBody2D"]
-script = ExtResource("1_2q77d")
+script = ExtResource("1_wj4dy")
 
-[node name="Sprite" type="Sprite2D" parent="."]
-texture_filter = 1
-texture = ExtResource("1_iw5p3")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="Hurtbox" type="CollisionShape2D" parent="."]
+scale = Vector2(10, 10)
 shape = SubResource("RectangleShape2D_wiqpp")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="AnimationPlayer"]
+texture_filter = 3
+scale = Vector2(10, 10)
+sprite_frames = SubResource("SpriteFrames_1nkbj")
+animation = &"A"
+autoplay = "Idle"
