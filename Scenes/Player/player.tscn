@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://4750kh3nitog"]
+
+[ext_resource type="Texture2D" uid="uid://cjtg136eptil1" path="res://Assets/SMS BRAWLER Character Renegade FREE FILES/Renegade_Idle_1_strip4.png" id="1_iw5p3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wiqpp"]
+size = Vector2(64, 30)
+
+[node name="Player" type="CharacterBody2D"]
+
+[node name="RenegadeIdle1Strip4" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_iw5p3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_wiqpp")
