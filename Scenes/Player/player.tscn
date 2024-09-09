@@ -1,7 +1,7 @@
 [gd_scene load_steps=30 format=3 uid="uid://4750kh3nitog"]
 
 [ext_resource type="Script" path="res://Scripts/Player/player.gd" id="1_wj4dy"]
-[ext_resource type="Texture2D" uid="uid://dfivi4x81c1gq" path="res://Assets/Player/StickmanSpreadsheet.png" id="2_4x2xx"]
+[ext_resource type="Texture2D" uid="uid://chlk6he5wv31u" path="res://Assets/Player/StickmanSpreadsheet.png" id="2_4x2xx"]
 [ext_resource type="AudioStream" uid="uid://t5ta5hxkq2ha" path="res://Assets/Sounds/A-Jab.wav" id="3_qsfrs"]
 [ext_resource type="AudioStream" uid="uid://c0u7emdqwml5q" path="res://Assets/Sounds/AA-Uppercut.wav" id="4_j14mn"]
 [ext_resource type="AudioStream" uid="uid://csdsloqcke6dd" path="res://Assets/Sounds/B-AnkleKick.wav" id="4_scdv3"]

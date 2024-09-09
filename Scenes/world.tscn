@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://cmq7o3maed6cw"]
+[gd_scene load_steps=6 format=3 uid="uid://cmq7o3maed6cw"]
 
 [ext_resource type="PackedScene" uid="uid://4750kh3nitog" path="res://Scenes/Player/player.tscn" id="1_7rywe"]
 [ext_resource type="Texture2D" uid="uid://bf5klefofpvj6" path="res://Assets/Decorations/martii-a-backyard-wrestling-ring.jpg" id="1_n1vbm"]
 [ext_resource type="PackedScene" uid="uid://bino2e3845iua" path="res://Scenes/Player/Healthbar.tscn" id="2_fcjn3"]
+[ext_resource type="AudioStream" uid="uid://bft0g5sle1tyq" path="res://Assets/Music/Fight Or Flight - 8 Bit Battle Rock - RPG Game Music By HeatleyBros (mp3cut.net).mp3" id="4_k40s2"]
+[ext_resource type="PackedScene" uid="uid://dfloo3lrd0jiv" path="res://Scenes/clock.tscn" id="5_px7bq"]
 
 [node name="World" type="Node2D"]
 
@@ -18,3 +20,18 @@ offset = Vector2(576, 324)
 position = Vector2(500, 425)
 
 [node name="Healthbar" parent="." instance=ExtResource("2_fcjn3")]
+
+[node name="BackroundMusic" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_k40s2")
+volume_db = -5.0
+autoplay = true
+bus = &"Backround Music"
+
+[node name="Clock" parent="." instance=ExtResource("5_px7bq")]
+offset_left = 557.0
+offset_top = 0.0
+offset_right = 614.0
+offset_bottom = 69.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 60
