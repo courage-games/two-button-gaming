@@ -1137,7 +1137,7 @@ height = 114.0
 script = ExtResource("1_wj4dy")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture_filter = 5
+texture_filter = 3
 scale = Vector2(10, 10)
 texture = ExtResource("2_4x2xx")
 hframes = 4
