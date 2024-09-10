@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://btsa7c0b3dudh"]
+
+[ext_resource type="Texture2D" uid="uid://hsyriaf4a8hu" path="res://Assets/Player/Healthbar.png" id="1_7k3bg"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h76ww"]
+bg_color = Color(0.380392, 0.396078, 0.439216, 0.905882)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ymtxj"]
+bg_color = Color(0.869657, 0.605427, 1.54018e-06, 1)
+
+[node name="HealthbarPlayer2" type="ProgressBar"]
+offset_left = 37.0
+offset_top = 23.0
+offset_right = 437.0
+offset_bottom = 53.0
+theme_override_styles/background = SubResource("StyleBoxFlat_h76ww")
+theme_override_styles/fill = SubResource("StyleBoxFlat_ymtxj")
+value = 100.0
+show_percentage = false
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 3
+position = Vector2(211, 276)
+rotation = 3.14159
+scale = Vector2(6, 5.7)
+texture = ExtResource("1_7k3bg")

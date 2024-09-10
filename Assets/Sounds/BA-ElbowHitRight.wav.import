@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cexhpoamkp5mv"
-path="res://.godot/imported/BA-ElbowHit.wav-5105d87fcaf31c7529078d133300e1c5.sample"
+path="res://.godot/imported/BA-ElbowHitRight.wav-811bf3023449067f7470ef285ea0d3e6.sample"
 
 [deps]
 
-source_file="res://Assets/Sounds/BA-ElbowHit.wav"
-dest_files=["res://.godot/imported/BA-ElbowHit.wav-5105d87fcaf31c7529078d133300e1c5.sample"]
+source_file="res://Assets/Sounds/BA-ElbowHitRight.wav"
+dest_files=["res://.godot/imported/BA-ElbowHitRight.wav-811bf3023449067f7470ef285ea0d3e6.sample"]
 
 [params]
 

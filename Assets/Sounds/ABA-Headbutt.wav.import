@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://c6irk4jaj3agd"
-path="res://.godot/imported/BAA-Headbutt.wav-30be83636530eaf3c79bcae320bff5e2.sample"
+path="res://.godot/imported/ABA-Headbutt.wav-0d045267342d485f6fca7caeb57e2216.sample"
 
 [deps]
 
-source_file="res://Assets/Sounds/BAA-Headbutt.wav"
-dest_files=["res://.godot/imported/BAA-Headbutt.wav-30be83636530eaf3c79bcae320bff5e2.sample"]
+source_file="res://Assets/Sounds/ABA-Headbutt.wav"
+dest_files=["res://.godot/imported/ABA-Headbutt.wav-0d045267342d485f6fca7caeb57e2216.sample"]
 
 [params]
 

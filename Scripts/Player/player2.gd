@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
-@onready var health_bar = $"../Healthbar"
-@onready var _animation_player = $AnimationPlayer
+@onready var health_bar = $"../HealthbarPlayer2"
+@onready var _animation_player = $AnimationPlayer2
 
 var health = 100
 var state = "idle"
@@ -22,7 +22,7 @@ func _ready() -> void:
 	
 func _process(_delta: float) -> void:
 	
-	if Input.is_action_just_pressed("Action_1") and can_hit:
+	if Input.is_action_just_pressed("Action_1_Player2") and can_hit:
 		if state == "idle":
 			set_state("A", 0.1, $"Sounds/A-Jab", 2)
 		elif state == "A":
@@ -38,7 +38,7 @@ func _process(_delta: float) -> void:
 			set_state("BAA", 0.2, $"Sounds/BAA-ElbowHitLeft", 3)
 		elif state == "BB":
 			set_state("BBA", 0.3, $"Sounds/BBA-OverheadPunch", 7)
-	if Input.is_action_just_pressed("Action_2") and can_hit:
+	if Input.is_action_just_pressed("Action_2_Player2") and can_hit:
 		if state == "idle":
 			set_state("B", 0.15, $"Sounds/B-AnkleKick", 2)
 		elif state == "B":
@@ -73,12 +73,12 @@ func _on_subtract_health(amount):
 func _on_timer_timeout() -> void:
 	can_hit = true
 
-func _on_hitbox_arm_body_entered(body):
+func _on_hitbox_arm_body_entered(body: Node2D) -> void:
 	if body != self:
 		body._on_subtract_health(damage)
 		body.set_state("Hurt", 0.3, $"Sounds/IdleNone", 0)
 
-func _on_hitbox_leg_body_entered(body):
+func _on_hitbox_leg_body_entered(body: Node2D) -> void:
 	if body != self:
 		body._on_subtract_health(damage)
 		body.set_state("Hurt", 0.3, $"Sounds/IdleNone", 0)

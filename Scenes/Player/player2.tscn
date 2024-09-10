@@ -1,21 +1,21 @@
-[gd_scene load_steps=37 format=3 uid="uid://4750kh3nitog"]
+[gd_scene load_steps=37 format=3 uid="uid://dbg0pe3qep3jq"]
 
-[ext_resource type="Script" path="res://Scripts/Player/player.gd" id="1_wj4dy"]
-[ext_resource type="Texture2D" uid="uid://cor3xw0q08o83" path="res://Assets/Player/StickmanSpreadsheet.png" id="2_4x2xx"]
-[ext_resource type="AudioStream" uid="uid://t5ta5hxkq2ha" path="res://Assets/Sounds/A-Jab.wav" id="3_qsfrs"]
-[ext_resource type="AudioStream" uid="uid://c0u7emdqwml5q" path="res://Assets/Sounds/AA-Uppercut.wav" id="4_j14mn"]
-[ext_resource type="AudioStream" uid="uid://csdsloqcke6dd" path="res://Assets/Sounds/B-AnkleKick.wav" id="4_scdv3"]
-[ext_resource type="AudioStream" uid="uid://dam7oudagmoc0" path="res://Assets/Sounds/BBB-Stomp.wav" id="5_cl0at"]
-[ext_resource type="AudioStream" uid="uid://0av0ojon8eiu" path="res://Assets/Sounds/AAA-LiverHit.wav" id="5_k2h2m"]
-[ext_resource type="AudioStream" uid="uid://dio1t1805sldy" path="res://Assets/Sounds/BBA-OverheadPunch.wav" id="5_rxbxh"]
-[ext_resource type="AudioStream" uid="uid://djgp5ql6hbvtp" path="res://Assets/Sounds/AAB-BackKick.wav" id="5_tdvu3"]
-[ext_resource type="AudioStream" uid="uid://bvmkujpgyjm1l" path="res://Assets/Sounds/BB-SideKick.wav" id="6_m3lcb"]
-[ext_resource type="AudioStream" uid="uid://cexhpoamkp5mv" path="res://Assets/Sounds/BA-ElbowHitRight.wav" id="6_ywmtd"]
-[ext_resource type="AudioStream" uid="uid://bw08w3b2d7rni" path="res://Assets/Sounds/ABB-HighKick.wav" id="7_1yxax"]
-[ext_resource type="AudioStream" uid="uid://dmups1c38ppls" path="res://Assets/Sounds/BAB-HandKick.wav" id="8_dba6f"]
-[ext_resource type="AudioStream" uid="uid://c6irk4jaj3agd" path="res://Assets/Sounds/ABA-Headbutt.wav" id="8_ya1g7"]
-[ext_resource type="AudioStream" uid="uid://do1shx3ynbt71" path="res://Assets/Sounds/AB-Stand.wav" id="9_7sm3e"]
-[ext_resource type="AudioStream" uid="uid://dcj08naw8eqle" path="res://Assets/Player/DeathSound.wav" id="16_fegsg"]
+[ext_resource type="Script" path="res://Scripts/Player/player2.gd" id="1_ttlud"]
+[ext_resource type="Texture2D" uid="uid://cor3xw0q08o83" path="res://Assets/Player/StickmanSpreadsheet.png" id="2_ddoaw"]
+[ext_resource type="AudioStream" uid="uid://t5ta5hxkq2ha" path="res://Assets/Sounds/A-Jab.wav" id="3_qss5u"]
+[ext_resource type="AudioStream" uid="uid://c0u7emdqwml5q" path="res://Assets/Sounds/AA-Uppercut.wav" id="4_ol77y"]
+[ext_resource type="AudioStream" uid="uid://0av0ojon8eiu" path="res://Assets/Sounds/AAA-LiverHit.wav" id="5_rft1y"]
+[ext_resource type="AudioStream" uid="uid://djgp5ql6hbvtp" path="res://Assets/Sounds/AAB-BackKick.wav" id="6_8o276"]
+[ext_resource type="AudioStream" uid="uid://do1shx3ynbt71" path="res://Assets/Sounds/AB-Stand.wav" id="7_dr3ti"]
+[ext_resource type="AudioStream" uid="uid://c6irk4jaj3agd" path="res://Assets/Sounds/ABA-Headbutt.wav" id="8_j2vg1"]
+[ext_resource type="AudioStream" uid="uid://bw08w3b2d7rni" path="res://Assets/Sounds/ABB-HighKick.wav" id="9_27spk"]
+[ext_resource type="AudioStream" uid="uid://csdsloqcke6dd" path="res://Assets/Sounds/B-AnkleKick.wav" id="10_6y888"]
+[ext_resource type="AudioStream" uid="uid://cexhpoamkp5mv" path="res://Assets/Sounds/BA-ElbowHitRight.wav" id="11_ywrnv"]
+[ext_resource type="AudioStream" uid="uid://dmups1c38ppls" path="res://Assets/Sounds/BAB-HandKick.wav" id="12_vvcne"]
+[ext_resource type="AudioStream" uid="uid://bvmkujpgyjm1l" path="res://Assets/Sounds/BB-SideKick.wav" id="13_r2yix"]
+[ext_resource type="AudioStream" uid="uid://dio1t1805sldy" path="res://Assets/Sounds/BBA-OverheadPunch.wav" id="14_entuv"]
+[ext_resource type="AudioStream" uid="uid://dam7oudagmoc0" path="res://Assets/Sounds/BBB-Stomp.wav" id="15_2eifk"]
+[ext_resource type="AudioStream" uid="uid://dcj08naw8eqle" path="res://Assets/Player/DeathSound.wav" id="16_ls7ie"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wiqpp"]
 size = Vector2(18, 30.9)
@@ -57,7 +57,7 @@ tracks/2/keys = {
 "times": PackedFloat32Array(0, 0.1),
 "transitions": PackedFloat32Array(25, 1e-05),
 "update": 0,
-"values": [Vector2(110, -40), Vector2(0, -40)]
+"values": [Vector2(-110, -40), Vector2(0, -40)]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -121,7 +121,7 @@ tracks/2/keys = {
 "times": PackedFloat32Array(0.15, 0.2),
 "transitions": PackedFloat32Array(25, 1e-05),
 "update": 0,
-"values": [Vector2(110, -40), Vector2(0, -40)]
+"values": [Vector2(-110, -40), Vector2(0, -40)]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -185,7 +185,7 @@ tracks/2/keys = {
 "times": PackedFloat32Array(0, 0.2),
 "transitions": PackedFloat32Array(25, 1e-05),
 "update": 0,
-"values": [Vector2(110, -40), Vector2(0, -40)]
+"values": [Vector2(-110, -40), Vector2(0, -40)]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -261,7 +261,7 @@ tracks/3/keys = {
 "times": PackedFloat32Array(0.166667, 0.3),
 "transitions": PackedFloat32Array(25, 1e-05),
 "update": 0,
-"values": [Vector2(110, 94), Vector2(0, 94)]
+"values": [Vector2(-110, 94), Vector2(0, 94)]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
@@ -365,7 +365,7 @@ tracks/2/keys = {
 "times": PackedFloat32Array(0, 0.2),
 "transitions": PackedFloat32Array(25, 1e-05),
 "update": 0,
-"values": [Vector2(110, -40), Vector2(0, -40)]
+"values": [Vector2(-110, -40), Vector2(0, -40)]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -429,7 +429,7 @@ tracks/2/keys = {
 "times": PackedFloat32Array(0, 0.3),
 "transitions": PackedFloat32Array(25, 4.02682e-05),
 "update": 0,
-"values": [Vector2(110, -40), Vector2(0, -40)]
+"values": [Vector2(-110, -40), Vector2(0, -40)]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -493,7 +493,7 @@ tracks/2/keys = {
 "times": PackedFloat32Array(0, 0.1),
 "transitions": PackedFloat32Array(25, 1e-05),
 "update": 0,
-"values": [Vector2(110, 94), Vector2(0, 94)]
+"values": [Vector2(-110, 94), Vector2(0, 94)]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -557,7 +557,7 @@ tracks/2/keys = {
 "times": PackedFloat32Array(0, 0.2),
 "transitions": PackedFloat32Array(25, 1e-05),
 "update": 0,
-"values": [Vector2(110, -40), Vector2(0, -40)]
+"values": [Vector2(-110, -40), Vector2(0, -40)]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -621,7 +621,7 @@ tracks/2/keys = {
 "times": PackedFloat32Array(0, 0.166667),
 "transitions": PackedFloat32Array(25, 1e-05),
 "update": 0,
-"values": [Vector2(110, -40), Vector2(0, -40)]
+"values": [Vector2(-110, -40), Vector2(0, -40)]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -685,7 +685,7 @@ tracks/2/keys = {
 "times": PackedFloat32Array(0, 0.3),
 "transitions": PackedFloat32Array(25, 3.03144e-05),
 "update": 0,
-"values": [Vector2(110, 94), Vector2(0, 94)]
+"values": [Vector2(-110, 94), Vector2(0, 94)]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -749,7 +749,7 @@ tracks/2/keys = {
 "times": PackedFloat32Array(0, 0.3),
 "transitions": PackedFloat32Array(25, 1e-05),
 "update": 0,
-"values": [Vector2(110, 94), Vector2(0, 94)]
+"values": [Vector2(-110, 94), Vector2(0, 94)]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -813,7 +813,7 @@ tracks/2/keys = {
 "times": PackedFloat32Array(0, 0.2),
 "transitions": PackedFloat32Array(25, 1),
 "update": 0,
-"values": [Vector2(110, -40), Vector2(0, -40)]
+"values": [Vector2(-110, -40), Vector2(0, -40)]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -877,7 +877,7 @@ tracks/2/keys = {
 "times": PackedFloat32Array(0, 0.3),
 "transitions": PackedFloat32Array(25, 1e-05),
 "update": 0,
-"values": [Vector2(110, 94), Vector2(0, 94)]
+"values": [Vector2(-110, 94), Vector2(0, 94)]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -1134,12 +1134,13 @@ radius = 12.0
 height = 114.0
 
 [node name="Player" type="CharacterBody2D"]
-script = ExtResource("1_wj4dy")
+script = ExtResource("1_ttlud")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 5
 scale = Vector2(10, 10)
-texture = ExtResource("2_4x2xx")
+texture = ExtResource("2_ddoaw")
+flip_h = true
 hframes = 4
 vframes = 7
 frame = 8
@@ -1150,7 +1151,7 @@ scale = Vector2(10, 10)
 shape = SubResource("RectangleShape2D_wiqpp")
 disabled = true
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_xgw05")
 }
@@ -1179,51 +1180,51 @@ debug_color = Color(1, 0.275544, 0.198249, 0.42)
 [node name="Sounds" type="Node" parent="."]
 
 [node name="A-Jab" type="AudioStreamPlayer2D" parent="Sounds"]
-stream = ExtResource("3_qsfrs")
+stream = ExtResource("3_qss5u")
 
 [node name="AA-Uppercut" type="AudioStreamPlayer2D" parent="Sounds"]
-stream = ExtResource("4_j14mn")
+stream = ExtResource("4_ol77y")
 
 [node name="AAA-LiverPunch" type="AudioStreamPlayer2D" parent="Sounds"]
-stream = ExtResource("5_k2h2m")
+stream = ExtResource("5_rft1y")
 
 [node name="AAB-BackKick" type="AudioStreamPlayer2D" parent="Sounds"]
-stream = ExtResource("5_tdvu3")
+stream = ExtResource("6_8o276")
 
 [node name="AB-Stand" type="AudioStreamPlayer2D" parent="Sounds"]
-stream = ExtResource("9_7sm3e")
+stream = ExtResource("7_dr3ti")
 
 [node name="ABA-Headbutt" type="AudioStreamPlayer2D" parent="Sounds"]
-stream = ExtResource("8_ya1g7")
+stream = ExtResource("8_j2vg1")
 
 [node name="ABB-HighKick" type="AudioStreamPlayer2D" parent="Sounds"]
-stream = ExtResource("7_1yxax")
+stream = ExtResource("9_27spk")
 
 [node name="B-AnkleKick" type="AudioStreamPlayer2D" parent="Sounds"]
-stream = ExtResource("4_scdv3")
+stream = ExtResource("10_6y888")
 
 [node name="BA-ElbowHitRight" type="AudioStreamPlayer2D" parent="Sounds"]
-stream = ExtResource("6_ywmtd")
+stream = ExtResource("11_ywrnv")
 
 [node name="BAA-ElbowHitLeft" type="AudioStreamPlayer2D" parent="Sounds"]
-stream = ExtResource("6_ywmtd")
+stream = ExtResource("11_ywrnv")
 
 [node name="BAB-HandKick" type="AudioStreamPlayer2D" parent="Sounds"]
-stream = ExtResource("8_dba6f")
+stream = ExtResource("12_vvcne")
 
 [node name="BB-SideKick" type="AudioStreamPlayer2D" parent="Sounds"]
-stream = ExtResource("6_m3lcb")
+stream = ExtResource("13_r2yix")
 
 [node name="BBA-OverheadPunch" type="AudioStreamPlayer2D" parent="Sounds"]
-stream = ExtResource("5_rxbxh")
+stream = ExtResource("14_entuv")
 
 [node name="BBB-Stomp" type="AudioStreamPlayer2D" parent="Sounds"]
-stream = ExtResource("5_cl0at")
+stream = ExtResource("15_2eifk")
 
 [node name="IdleNone" type="AudioStreamPlayer2D" parent="Sounds"]
 
 [node name="DeathSound" type="AudioStreamPlayer2D" parent="Sounds"]
-stream = ExtResource("16_fegsg")
+stream = ExtResource("16_ls7ie")
 
 [connection signal="timeout" from="hit_cooldown" to="." method="_on_timer_timeout"]
 [connection signal="body_entered" from="HitboxArm" to="." method="_on_hitbox_arm_body_entered"]
