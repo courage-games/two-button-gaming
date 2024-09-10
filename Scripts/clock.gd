@@ -9,7 +9,7 @@ func _on_timer_timeout() -> void:
 		$".".text = 'Time Out'
 		$Timer.queue_free()
 func _process(delta: float) -> void:
-	if $"../Player" == null:
+	if $"../Player1" == null:
 		$Timer.stop()
 		$".".text = "Player 2 Wins!"
 	elif $"../Player2" == null:

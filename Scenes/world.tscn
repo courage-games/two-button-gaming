@@ -11,21 +11,21 @@
 
 [node name="World" type="Node2D"]
 
-[node name="Martii-a-backyard-wrestling-ring" type="Sprite2D" parent="."]
+[node name="Background" type="Sprite2D" parent="."]
 position = Vector2(613.4, 316)
 scale = Vector2(0.683958, 0.67)
 texture = ExtResource("1_n1vbm")
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera" type="Camera2D" parent="."]
 offset = Vector2(576, 324)
 
-[node name="Player" parent="." instance=ExtResource("1_7rywe")]
+[node name="Player1" parent="." instance=ExtResource("1_7rywe")]
 position = Vector2(500, 425)
 
 [node name="Player2" parent="." instance=ExtResource("3_c87ai")]
 position = Vector2(700, 425)
 
-[node name="Healthbar" parent="." instance=ExtResource("2_fcjn3")]
+[node name="HealthbarPlayer1" parent="." instance=ExtResource("2_fcjn3")]
 
 [node name="HealthbarPlayer2" parent="." instance=ExtResource("4_50u47")]
 offset_left = 701.0

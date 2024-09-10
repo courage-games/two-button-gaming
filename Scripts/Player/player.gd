@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@onready var health_bar = $"../Healthbar"
+@onready var health_bar = $"../HealthbarPlayer1"
 @onready var _animation_player = $AnimationPlayer
 
 var health = 100
